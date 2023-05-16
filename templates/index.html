@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <div>   
+        {% for data in value %}
+            <li>{{data}}</li>
+        {% endfor %}
+    </div>
+
+    <dif>+++++++++++++++++++++++++++++++++++</div>
+
+    <div>
+        {%if suasana == 'senang'%}
+        <p>dia juga cinta</p>
+        {% else %}
+        <p>dia sedih</p>
+        {% endif %}
+    </div>
+
+    <dif>+++++++++++++++++++++++++++++++++++</div>
+    
+    <div>
+        {% for data in value %}
+        {%if data == 'senin'%}
+        <p> hari senin masuk</p>
+        {% elif data == 'minggu' %}
+        <p> hari minggu libur </p>
+        {%else%}
+        <p> {{data}} </p>
+        {%endif%}
+        {% endfor %}
+    </div>
+
+    <dif>+++++++++++++++++++++++++++++++++++</div>
+
+    <title>Hallo Flask-ku!!</title> 
+    <h2> ini projek-ku gitu </h2>
+    <h3> ya begitu deh</h3>
+    <h3> jadi begini dan begitu </h3>
+    
+</body>
