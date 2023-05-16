@@ -78,11 +78,6 @@ def loginku():
             return redirect(url_for("loginku"))
     return render_template("login.html")
 
-@app.route("/sukses")
-def sukses():
-    nilai = "anda sukses login"
-    return render_template('sukses.html', nilai=nilai)
-
 # percobaan
 @app.route("/yuki")
 def yuki():
