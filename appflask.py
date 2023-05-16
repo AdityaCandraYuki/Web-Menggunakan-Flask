@@ -83,6 +83,9 @@ def sukses():
     nilai = "anda sukses login"
     return render_template('sukses.html', nilai=nilai)
 
-
+# percobaan
+@app.route("/yuki")
+def yuki():
+    return render_template('yuki.html') 
 if __name__ == '__main__':
     app.run(debug=True)
